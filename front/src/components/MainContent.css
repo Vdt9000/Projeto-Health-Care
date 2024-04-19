@@ -1,0 +1,19 @@
+h2 {
+    font-size: 250%;
+    color: rgb(0, 62, 66);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: linear-gradient(to bottom right, hsl(170, 100%, 76%), #4ca5ff);
+    background-color: #ffffff; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
