@@ -1,0 +1,53 @@
+/* Estilizando a área do chatbox */
+.chat-container {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 100vh; /* Altura total da viewport */
+}
+
+.chat-box {
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    padding: 90px;
+    width: 1500px; 
+    position: fixed; /* Alterando a posição para fixa */
+    top: 56%; /* Colocando o topo no meio da tela */
+    left: 8%; /* Colocando a esquerda no meio da tela */
+    
+}
+
+
+.message {
+    margin-bottom: 10px;
+}
+
+.input-field {
+    width: 88%;
+    padding: 10px;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    margin-top: 10px;
+    position: fixed; 
+    top: 80%; 
+    left: 8%; 
+}
+
+.send-button {
+    background-color: #47f9ff;
+    color: #000000;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    position: fixed; 
+    top: 85%; 
+    left: 8%; 
+}
+
+.send-button:disabled {
+    background-color: #ccc;
+    color: #000000;
+}

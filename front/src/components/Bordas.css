@@ -1,0 +1,87 @@
+#titulo {
+    position: fixed; /* Alterando a posição para fixa */
+    top: 5%; /* Colocando o topo no meio da tela */
+    left: 50%; /* Colocando a esquerda no meio da tela */
+    transform: translate(-50%, -50%); /* Usando transform para centralizar o elemento */
+    font-size: 250%;
+    color: rgb(0, 0, 0);
+    font-family: 'Poppins', sans-serif;
+    z-index: 2;
+    background-color: rgb(201, 249, 255);
+    border: 3px solid rgb(0, 0, 0);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+#subtitulo {
+    position: fixed; /* Alterando a posição para fixa */
+    top: 12%; /* Colocando o topo no meio da tela */
+    left: 50%; /* Colocando a esquerda no meio da tela */
+    transform: translate(-50%, -50%); /* Usando transform para centralizar o elemento */
+    font-size: 150%;
+    color: rgb(0, 0, 0);
+    font-family: 'Poppins', sans-serif;
+    z-index: 2;
+}
+
+
+  
+body{
+    font-family: 'Poppins', sans-serif;
+    background-image: linear-gradient(to bottom right, hsl(180, 100%, 50%), #011d77);
+    background-color: #0011ff;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    color: #000000;
+    display: flex;
+    }
+
+#myList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    float: left;
+    margin-left: 1.2cm;
+    margin-top: 1cm;
+    position: relative; 
+    z-index: 2;
+}
+
+#myList li {
+    margin-bottom: 10px;
+}
+
+#myList svg {
+    width: 30px;
+    height: 30px;
+}
+#usuario {
+    list-style-type: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 0 0 1cm 0cm;
+    z-index: 2;
+}
+
+#usuario svg {
+    width: 50px;
+    height: 50px;
+}
+
+#usuario-container {
+    position: fixed;
+    bottom: 1px;
+    left: 4px;
+    top: 1px; 
+    background-color: #aafcff;
+    border: 7px solid rgb(0, 0, 0);
+    padding: 53px;
+    z-index: 1;
+    border-radius: 20px;
+  }
+  
+  
+  
