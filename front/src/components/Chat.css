@@ -11,10 +11,10 @@
     border: 2px solid #000000;
     border-radius: 10px;
     padding: 90px;
-    width: 1500px; 
+    width: 990px; 
     position: fixed;
-    top: 56%; 
-    left: 8%; 
+    top: 55%; 
+    left: 15%; 
     
 }
 
@@ -24,14 +24,14 @@
 }
 
 .input-field {
-    width: 88%;
+    width: 60%;
     padding: 10px;
     border: 2px solid #000000;
     border-radius: 10px;
     margin-top: 10px;
     position: fixed; 
     top: 80%; 
-    left: 8%; 
+    left: 15%; 
 }
 
 .send-button {
@@ -43,8 +43,8 @@
     cursor: pointer;
     margin-top: 10px;
     position: fixed; 
-    top: 85%; 
-    left: 8%; 
+    top: 87%; 
+    left: 15%; 
 }
 
 .send-button:disabled {
