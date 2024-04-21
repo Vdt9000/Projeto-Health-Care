@@ -8,16 +8,16 @@ function HealthChat() {
   const handleMessageSend = () => {
     if (inputValue.trim() !== '') {
       setMessages([...messages, { sender: 'user', text: inputValue }]);
-      handleChatbotResponse(inputValue); // Chama a função para lidar com a resposta do chatbot
+      handleChatbotResponse(inputValue); 
       setInputValue('');
     }
   };
 
-  // Função para lidar com as respostas padrão do chatbot
+ 
   const handleChatbotResponse = (input) => {
     let response = '';
 
-    // Analisa a entrada do usuário e define a resposta do chatbot
+    
     switch (input.toLowerCase()) {
       case 'dor de cabeça':
         response = 'Sinto muito ouvir isso! Dor de cabeça pode ser realmente desagradável. Você já tentou descansar um pouco em um lugar silencioso e escuro? Às vezes, isso pode ajudar a aliviar um pouco. Também é importante manter-se hidratado e talvez considerar tomar um analgésico suave, se não houver contraindicações para você. Se a dor persistir ou piorar, é sempre uma boa ideia consultar um médico. Como você está se sentindo além da dor de cabeça?';

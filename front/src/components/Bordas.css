@@ -1,8 +1,8 @@
 #titulo {
-    position: fixed; /* Alterando a posição para fixa */
-    top: 5%; /* Colocando o topo no meio da tela */
-    left: 50%; /* Colocando a esquerda no meio da tela */
-    transform: translate(-50%, -50%); /* Usando transform para centralizar o elemento */
+    position: fixed; 
+    top: 5%; 
+    left: 50%;
+    transform: translate(-50%, -50%); 
     font-size: 250%;
     color: rgb(0, 0, 0);
     font-family: 'Poppins', sans-serif;
@@ -14,10 +14,10 @@
 }
 
 #subtitulo {
-    position: fixed; /* Alterando a posição para fixa */
-    top: 12%; /* Colocando o topo no meio da tela */
-    left: 50%; /* Colocando a esquerda no meio da tela */
-    transform: translate(-50%, -50%); /* Usando transform para centralizar o elemento */
+    position: fixed;
+    top: 12%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
     font-size: 150%;
     color: rgb(0, 0, 0);
     font-family: 'Poppins', sans-serif;

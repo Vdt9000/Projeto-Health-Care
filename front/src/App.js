@@ -1,10 +1,8 @@
 import logo from './logo.svg';
-
 import React from 'react';
 import Header from './components/Header';
 import MainContent from './components/MainContent';
 import HealthChat from './components/HealthChat';
-
 
 function App() {
   return (
@@ -16,6 +14,5 @@ function App() {
     </div>
   );
 }
-
 
 export default App;

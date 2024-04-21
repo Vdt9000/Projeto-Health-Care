@@ -1,9 +1,9 @@
-/* Estilizando a área do chatbox */
+
 .chat-container {
     display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
-    height: 100vh; /* Altura total da viewport */
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
 }
 
 .chat-box {
@@ -12,9 +12,9 @@
     border-radius: 10px;
     padding: 90px;
     width: 1500px; 
-    position: fixed; /* Alterando a posição para fixa */
-    top: 56%; /* Colocando o topo no meio da tela */
-    left: 8%; /* Colocando a esquerda no meio da tela */
+    position: fixed;
+    top: 56%; 
+    left: 8%; 
     
 }
 
