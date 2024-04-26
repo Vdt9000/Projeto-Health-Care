@@ -7,13 +7,17 @@
 }
 
 .chat-box {
-    background-color: #ffffff;
+    background-color: #ffffff8e;
     border: 2px solid #000000;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: rgb(0, 0, 255);
     border-radius: 10px;
-    padding: 90px;
-    width: 990px; 
+    padding: 80px;
+    width: 900px; 
     position: fixed;
-    top: 55%; 
+    height: 200px;
+    top: 25%; 
     left: 15%; 
     
 }
@@ -24,27 +28,27 @@
 }
 
 .input-field {
-    width: 60%;
+    width: 68%;
     padding: 10px;
     border: 2px solid #000000;
     border-radius: 10px;
     margin-top: 10px;
     position: fixed; 
-    top: 80%; 
+    top: 82%; 
     left: 15%; 
 }
 
 .send-button {
-    background-color: #47f9ff;
-    color: #000000;
+    background-color: #000000;
+    color: #ffffff;
     border: none;
-    padding: 10px 30px;
-    border-radius: 5px;
+    padding: 10px 25px;
+    border-radius: 8px;
     cursor: pointer;
     margin-top: 10px;
     position: fixed; 
-    top: 87%; 
-    left: 15%; 
+    top: 82%; 
+    left: 86%; 
 }
 
 .send-button:disabled {
