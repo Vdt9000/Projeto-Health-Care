@@ -6,9 +6,9 @@
     font-size: 200%;
     color: rgb(0, 0, 0);
     font-family: 'Poppins', sans-serif;
-    z-index: 2;
-    background-color: rgb(201, 249, 255);
-    border: 3px solid rgb(0, 0, 0);
+   
+    background-color: rgba(255, 255, 255, 0.37);
+    border: 1px solid rgb(255, 255, 255);
     padding: 10px;
     border-radius: 20px;
 }
@@ -21,15 +21,14 @@
     font-size: 130%;
     color: rgb(0, 0, 0);
     font-family: 'Poppins', sans-serif;
-    z-index: 2;
+
 }
 
 
   
 body{
     font-family: 'Poppins', sans-serif;
-    background-image: linear-gradient(to bottom right, hsl(180, 100%, 50%), #011d77);
-    background-color: #0011ff;
+    background-image: url(img/back.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -38,7 +37,7 @@ body{
     display: flex;
     }
 
-#myList {
+/* #myList {
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -74,14 +73,14 @@ body{
 #usuario-container {
     position: fixed;
     bottom: 30px;
-    left: 15px;
+    left: 18px;
     top: 30px; 
-    background-color: #aafcff;
-    border: 5px solid rgb(0, 0, 0);
+    background-color: #aafcff94;
+    border: 2px solid rgb(0, 0, 0);
     padding: 53px;
     z-index: 1;
     border-radius: 20px;
   }
   
   
-  
+   */
