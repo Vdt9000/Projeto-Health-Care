@@ -31,6 +31,7 @@ app.post('/teste', (req, res) => {
 
 
 
+
 app.get('/hello-world', (req, res) => {
     res.send('Hello, world!');
   });
