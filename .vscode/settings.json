@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
     "sqltools.connections": [
         {
             "mysqlOptions": {
@@ -14,4 +15,7 @@
             "username": "victor"
         }
     ]
+=======
+    "liveServer.settings.port": 5501
+>>>>>>> bef3f82610f184ee8512df09b1dfadbe17731818
 }
