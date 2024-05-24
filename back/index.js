@@ -14,7 +14,7 @@ app.post('/pergunte-ao-chatgpt', async (req, res) => {
     const { prompt } = req.body;
     const model = 'gpt-3.5-turbo';
     const role = 'user';
-    const max_tokens = 50;
+    const max_tokens = 100;
     const completion = await openai.chat.completions.create({
         messages: [{ role: role, content: prompt }],
         model: model,
@@ -23,12 +23,9 @@ app.post('/pergunte-ao-chatgpt', async (req, res) => {
     res.json({ completion: completion.choices[0].message.content });
 });
 
-app.post('/teste', (req, res) => {
+app.get('/teste', (req, res) => {
     res.send("Tudo certo");
 });
-
-
-
 
 
 
@@ -36,4 +33,4 @@ app.get('/hello-world', (req, res) => {
     res.send('Hello, world!');
   });
   
-app.listen(3000, () => console.log('ChatGPT_Backend em execução na porta 3000'));
+app.listen(3001, () => console.log('ChatGPT_Backend em execução na porta 3001'));
