@@ -1,88 +1,79 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:wght@300;480;600;700;800;900&display=swap');
 
 #titulo {
-    position: fixed; 
-    top: 5%; 
+    position: fixed;
+    top: 5%;
     left: 50%;
-    transform: translate(-50%, -50%); 
-    font-size: 200%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
     color: rgb(0, 0, 0);
     font-family: 'Poppins', sans-serif;
-   
     background-color: rgba(255, 255, 255, 0.37);
     border: 1px solid rgb(255, 255, 255);
     padding: 10px;
     border-radius: 20px;
+    text-align: center;
+    max-width: 90%; 
 }
 
 #subtitulo {
     position: fixed;
     top: 15%;
-    left: 50%; 
+    left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 130%;
+    font-size: 1.3rem; 
     color: rgb(0, 0, 0);
     font-family: 'Poppins', sans-serif;
-
+    text-align: center;
+    max-width: 90%; 
 }
 
-
-  
-body{
+body {
     font-family: 'Poppins', sans-serif;
-    background-image: url(img/back.jpg);
+    background-image: url(img/azulclaro.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
     color: #000000;
     display: flex;
+    flex-direction: column; 
+    align-items: center;
+    margin: 0; 
+    padding: 20px; 
+    box-sizing: border-box;
+}
+
+
+@media (max-width: 767px) {
+    #titulo {
+        font-size: 1.5rem; 
+        top: 10%;
+        padding: 8px;
     }
 
-/* #myList {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    float: left;
-    margin-left: 1.7cm;
-    margin-top: 2.5cm;
-    position: relative; 
-    z-index: 2;
-}
+    #subtitulo {
+        font-size: 1rem;
+        top: 20%;
+        padding: 8px;
+    }
 
-#myList li {
-    margin-bottom: 10px;
-}
+    .chat-box {
+        padding: 10px;
+        width: 100%; 
+        max-height: 50vh; 
+        top: 5%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
 
-#myList i {
-    width: 30px;
-    height: 30px;
-}
-#usuario {
-    list-style-type: none;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    margin: 0 0 2cm 0.7cm;
-    z-index: 2;
-}
+    .input-field {
+        width: calc(100% - 80px); 
+        padding: 8px;
+    }
 
-#usuario i {
-    width: 50px;
-    height: 50px;
+    .send-button {
+        padding: 8px 20px;
+    }
 }
-
-#usuario-container {
-    position: fixed;
-    bottom: 30px;
-    left: 18px;
-    top: 30px; 
-    background-color: #aafcff94;
-    border: 2px solid rgb(0, 0, 0);
-    padding: 53px;
-    z-index: 1;
-    border-radius: 20px;
-  }
-  
-  
-   */

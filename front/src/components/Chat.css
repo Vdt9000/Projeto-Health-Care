@@ -1,4 +1,3 @@
-
 .chat-container {
     display: flex;
     justify-content: center;
@@ -14,12 +13,15 @@
     scrollbar-color: rgb(0, 0, 255);
     border-radius: 10px;
     padding: 80px;
-    width: 900px; 
     position: fixed;
-    height: 200px;
+    width: 120%;
+    max-width: 1050px; 
+    height: 60vh;
+    max-height: 56vh; 
     top: 25%; 
     left: 15%; 
-    
+  
+ 
 }
 
 
@@ -36,23 +38,26 @@
     position: fixed; 
     top: 82%; 
     left: 15%; 
+    flex: 1;
+    padding: 1rem;
+    margin-right: 1rem;
 }
 
 .send-button {
     background-color: #000000;
     color: #ffffff;
     border: none;
-    padding: 10px 25px;
+    padding: 18px;
     border-radius: 8px;
     cursor: pointer;
     margin-top: 10px;
     position: fixed; 
     top: 82%; 
     left: 86%; 
+    min-width: 100px;
 }
 
 .send-button:disabled {
     background-color: #ccc;
     color: #000000;
 }
-
