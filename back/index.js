@@ -24,11 +24,13 @@ const pool = mysql.createPool({
 }).promise();
 
 app.post('/pergunte-ao-chatgpt', async (req, res) => {
+   
     const { prompt } = req.body;
 
     pool.getConnection()
     .then((conn) => {
-        conn.query("insert into logs (texto, data_hora, url) values (?, now(),'pergunte-ao-chatgpt');", [prompt]);
+        
+        conn.query("insert into logs (data_hora, url, mensagem) values (now(), 'pergunte-ao-chatgpt', ?);", [prompt]);
         conn.release();
     }).catch((err) => {
         console.log(err);
@@ -39,6 +41,7 @@ app.post('/pergunte-ao-chatgpt', async (req, res) => {
     const role = 'user';
     const max_tokens = 100;
     const completion = await openai.chat.completions.create({
+
         messages: [{ role: role, content: prompt }],
         model: model,
         max_tokens: max_tokens
