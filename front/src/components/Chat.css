@@ -5,59 +5,69 @@
     height: 100vh; 
 }
 
+/* Caixa de mensagens do chat */
 .chat-box {
-    background-color: #ffffff8e;
-    border: 2px solid #000000;
-    overflow-y: scroll;
-    scrollbar-width: thin;
-    scrollbar-color: rgb(0, 0, 255);
-    border-radius: 10px;
-    padding: 80px;
-    position: fixed;
-    width: 120%;
-    max-width: 1050px; 
-    height: 60vh;
-    max-height: 56vh; 
-    top: 25%; 
-    left: 15%; 
-  
- 
-}
-
-
-.message {
-    margin-bottom: 10px;
-}
-
-.input-field {
-    width: 68%;
-    padding: 10px;
-    border: 2px solid #000000;
-    border-radius: 10px;
-    margin-top: 10px;
+    background-color: rgba(255, 255, 255, 0.56); /* usando rgba para controlar a opacidade */
+    border: 2px solid #000; 
+    overflow-y: scroll; 
+    scrollbar-width: thin; /* Firefox */
+    scrollbar-color: #000 transparent; /* Firefox */
+    border-radius: 10px; 
+    padding: 20px; /* ajustando o padding */
     position: fixed; 
-    top: 82%; 
-    left: 15%; 
-    flex: 1;
-    padding: 1rem;
+    width: 100%; 
+    max-width: 1050px; 
+    height: 58vh; 
+    max-height: 58vh; /* corrigindo a altura */
+    top: 23%; 
+    left: 50%;
+    transform: translateX(-47%); /* centralizando horizontalmente */
+}
+
+/* Estilo das mensagens individuais */
+.message {
+    margin-bottom: 10px; 
+}
+
+/* Campo de entrada de texto */
+.input-field {
+    width: 74%; 
+    padding: 1rem; 
+    border: 2px solid #000; 
+    border-radius: 10px; 
+    margin-top: 10px; 
+    position: fixed; 
+    bottom: 10%; /* ajustando para uma melhor responsividade */
+    left: 11%; 
     margin-right: 1rem;
 }
 
+/* Botão */
 .send-button {
-    background-color: #000000;
-    color: #ffffff;
-    border: none;
-    padding: 18px;
-    border-radius: 8px;
-    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.65); 
+    color: #000; 
+    border: 2px solid #000; 
+    padding: 15px; 
+    border-radius: 8px; 
+    cursor: pointer; 
     margin-top: 10px;
-    position: fixed; 
-    top: 82%; 
+    position: fixed;
+    bottom: 10%; /* ajustando para uma melhor responsividade */
     left: 86%; 
-    min-width: 100px;
+    min-width: 90px;
+    font-weight: bold; 
 }
 
-.send-button:disabled {
-    background-color: #ccc;
-    color: #000000;
+/* Estilo da scrollbar para navegadores WebKit (Chrome, Safari) */
+.chat-box::-webkit-scrollbar {
+    width: 12px; 
+}
+
+.chat-box::-webkit-scrollbar-track {
+    background: transparent; 
+}
+
+.chat-box::-webkit-scrollbar-thumb {
+    background-color: #000; 
+    border-radius: 10px;
 }
