@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from './components/Header';
 import HealthChat from './components/HealthChat';
+import BotaoEnviar from './components/BotaoEnviar';
 
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
     <div>
       <Header />
       <HealthChat />
+      <BotaoEnviar/>
 
 
     </div>

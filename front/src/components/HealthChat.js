@@ -7,15 +7,16 @@ import { Toast } from 'primereact/toast';
 import InfoIcon from '../components/img/Info.png'; // esse importa o ícone de info
 import LixoIcon from '../components/img/Lixo.png'; // esse importa o ícone de lixo
 import SalvarIcon from '../components/img/Salvar.png'; // esse importa o ícone de salvar
-
+import BotaoEnviar from './BotaoEnviar'; // Importa o novo componente de botão
 
 function HealthChat() {
- 
   const [messages, setMessages] = useState([]); // pra armazenar mensagens
- const [inputValue, setInputValue] = useState('');// pra armazenar valor do input
- const [position] = useState('left');// pra deixar os icones na esquerda da tela
+  const [inputValue, setInputValue] = useState('');// pra armazenar valor do input
+  const [position] = useState('left');// pra deixar os icones na esquerda da tela
   const [visible, setVisible] = useState(false);
-    const toast = useRef(null);
+  const toast = useRef(null);
+
+
 
   // Função pra enviar mensagem
   const handleMessageSend = () => {
@@ -31,7 +32,7 @@ function HealthChat() {
     }
   };
 
-  // isso limpar o chat
+  // isso limpa o chat
   const clearChat = () => {
     setMessages([]);
   };
@@ -110,9 +111,7 @@ function HealthChat() {
             className="input-field"
           />
           
-          <button type="submit" className="send-button">
-            Enviar
-          </button>
+          <BotaoEnviar onClick={handleSubmit} />
           
         </form>
       </div>
@@ -121,3 +120,6 @@ function HealthChat() {
 }
 
 export default HealthChat;
+
+
+

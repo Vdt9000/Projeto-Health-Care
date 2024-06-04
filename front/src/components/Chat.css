@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:wght@300;480;600;700;800;900&display=swap');
+
 .chat-container {
     display: flex;
     justify-content: center;
@@ -7,8 +9,8 @@
 
 /* Caixa de mensagens do chat */
 .chat-box {
-    background-color: rgba(255, 255, 255, 0.56); /* usando rgba para controlar a opacidade */
-    border: 2px solid #000; 
+    background-color: rgba(255, 255, 255, 0.63); /* usando rgba para controlar a opacidade */
+    border: 1.4px solid #000; 
     overflow-y: scroll; 
     scrollbar-width: thin; /* Firefox */
     scrollbar-color: #000 transparent; /* Firefox */
@@ -17,8 +19,8 @@
     position: fixed; 
     width: 100%; 
     max-width: 1050px; 
-    height: 58vh; 
-    max-height: 58vh; /* corrigindo a altura */
+    height: 55vh; 
+    max-height: 55vh; /* corrigindo a altura */
     top: 23%; 
     left: 50%;
     transform: translateX(-47%); /* centralizando horizontalmente */
@@ -33,32 +35,64 @@
 .input-field {
     width: 74%; 
     padding: 1rem; 
-    border: 2px solid #000; 
+    border: 1.4px solid #000; 
     border-radius: 10px; 
-    margin-top: 10px; 
+    margin-top: 1px; 
     position: fixed; 
-    bottom: 10%; /* ajustando para uma melhor responsividade */
+    bottom: 10%; /* ajustando responsividade */
     left: 11%; 
     margin-right: 1rem;
 }
 
-/* Botão */
-.send-button {
-    background-color: rgba(255, 255, 255, 0.65); 
-    color: #000; 
-    border: 2px solid #000; 
-    padding: 15px; 
-    border-radius: 8px; 
-    cursor: pointer; 
-    margin-top: 10px;
-    position: fixed;
-    bottom: 10%; /* ajustando para uma melhor responsividade */
-    left: 86%; 
-    min-width: 90px;
-    font-weight: bold; 
+/* Botão do site uiverse (sites com css prontos)*/
+.btn:link,
+.btn:visited {
+    
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
+  
+  padding: 10px 20px;
+  border: 1.4px solid;
+  border-radius: 10px;
+  display: inline-block;
+  transition: all .2s;
+  position: fixed;
+  left: 86%;
+  margin-top: 186px;
+
 }
 
-/* Estilo da scrollbar para navegadores WebKit (Chrome, Safari) */
+.btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.btn:active {
+  transform: translateY(-3px);
+}
+
+.btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: -1;
+  transition: all .3s;
+}
+
+.btn:hover::after {
+  background-color: rgb(0, 89, 255);
+  transform: scaleX(1.4) scaleY(1.5);
+  opacity: 0;
+}
+
+
+/* Estilo da scrollbar */
 .chat-box::-webkit-scrollbar {
     width: 12px; 
 }
