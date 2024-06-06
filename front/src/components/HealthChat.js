@@ -71,6 +71,15 @@ function HealthChat() {
     handleMessageSend();
   };
 
+  useEffect(() => {
+    // Remove a barra de rolagem
+    document.body.style.overflow = 'hidden';
+    return () => {
+      
+      document.body.style.overflow = 'auto';
+    };
+  }, []);
+
   return (
     <div className="card dock-demo">
       <Toast ref={toast}></Toast>
@@ -120,6 +129,7 @@ function HealthChat() {
 }
 
 export default HealthChat;
+
 
 
 
